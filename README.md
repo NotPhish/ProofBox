@@ -7,3 +7,5 @@ What is ProofBox?
 What can you expect from this Project?
 
 - Easily accessable from your Browser
+- Welcoming communities
+- Much more fun studying
