@@ -30,7 +30,7 @@
     .icon-btn {
       background: white;
       border: 1px solid #ccc;
-      border-radius: 8px;
+      border-radius: 10px;
       width: 40px;
       height: 40px;
       display: flex;
@@ -42,7 +42,13 @@
       border: 1px solid black;
       background: white;
       padding: 0.5rem 1rem;
-      border-radius: 8px;
+      width: 70px;
+      height: 40px;
+      border-radius: 10px;
+      font-family: "Funnel Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
     }
 
     .banner {
@@ -55,9 +61,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid #aaa;
+      border: 1px solid black;
       background-image: radial-gradient(#ccc 10%, transparent 11%);
       background-size: 20px 20px;
+    }
+
+    .topics {
+      margin: 2rem auto;
+      border-radius: 16px;
+      padding: 2rem;
+      max-width: 80%;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
     }
 
     .input-area {
@@ -81,22 +99,22 @@
       background: white;
       border-radius: 25px;
       cursor: pointer;
+      font-family: "Funnel Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
     }
 
-    .signup-btn {
+    .account-btn {
         border: 1px solid black;
         background: white;
         padding: 0.5rem 1rem;
-        border-radius: 8px;
+        border-radius: 60px;
         cursor: pointer;
-    }
-
-    .login-btn {
-        border: 1px solid black;
-        background: white;
-        padding: 0.5rem 1rem;
-        border-radius: 8px;
-        cursor: pointer;
+        font-family: "Funnel Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
     }
 
     .logo{
@@ -105,6 +123,21 @@
         font-weight: 400;
         font-style: normal;
     }
+
+    .topic-btn {
+        border: 1px solid black;
+        background: white;
+        padding: 0.5rem 1rem;
+        width: 90px;
+        height: 65px;
+        border-radius: 10px;
+        font-family: "Funnel Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        text-align-last: center;
+    }
+
   </style>
 </head>
 
@@ -112,44 +145,42 @@
   <header>
     <div class="logo">ProofBox</div>
     <div class="header-icons">
-        <div class="icon-btn">
-            <a href="about.html">
-                ℹ️
-            </a>
-        </div>
-        <div class="icon-btn">
-            <a href="settings.html">
-                ⚙️
-            </a>
-        </div>
-        <div class="icon-btn">
-            <a href="Account.html">
-                👤
-            </a>
-        </div>
-        <button class="about-btn">
-            <a href="about.html">
-                About
-            </a>
-        </button>
-        <button class="signup-btn">
-            <a href="signup.html">
-                Sign-Up
-            </a>
-        </button>
-        <button class="login-btn">
-            <a href="login.html">
-                Login
-            </a>
-        </button>
+        <form action="about.html">
+          <button class="about-btn" type="submit">About</button>
+        </form>
+        
+        <form action="settings.html">
+          <button class="icon-btn" type="submit">⚙️</button>
+        </form>
+
+        <form action="Account.html">
+          <button class="icon-btn" type="submit">👤</button>
+        </form>
     </div>
   </header>
 
-  <div class="banner"></div>
+  <div class="banner">
+    <form action="signup.html">
+      <button class="account-btn" type="submit">Sign Up</button>
+    </form>
+    <form action="login.html">
+      <button class="account-btn" type="submit">Log in</button>
+    </form>
+  </div>
 
   <div class="input-area">
     <input type="text" class="input-field" placeholder="Help me with..." />
     <button class="ask-btn">Ask AI +</button>
+  </div>
+
+  <div class="topics">
+    <form>
+      <button class="topic-btn">Maths</button>
+    </form>
+
+    <form>
+      <button class="topic-btn">Geography</button>
+    </form>
   </div>
 </body>
 
