@@ -66,6 +66,12 @@
       background-size: 20px 20px;
     }
 
+    .topic-header {
+      font-weight: bold;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
     .topics {
       margin: 2rem auto;
       border-radius: 16px;
@@ -96,7 +102,7 @@
     .ask-btn {
       padding: 0.75rem 1.5rem;
       border: 1px solid black;
-      background: white;
+      background: E8E8E8;
       border-radius: 25px;
       cursor: pointer;
       font-family: "Funnel Display", sans-serif;
@@ -136,6 +142,13 @@
         font-weight: 400;
         font-style: normal;
         text-align-last: center;
+        background: repeating-linear-gradient(
+          45 deg,
+          #eee,
+          #eee 10px,
+          #ddd 10px,
+          #ddd 20px
+        )
     }
 
   </style>
@@ -174,12 +187,12 @@
   </div>
 
   <div class="topics">
-    <form>
-      <button class="topic-btn">Maths</button>
+    <form action="topics.html">
+      <button class="topic-btn" type="submit">Maths</button>
     </form>
 
-    <form>
-      <button class="topic-btn">Geography</button>
+    <form action="topics.html">
+      <button class="topic-btn" type="submit">Geography</button>
     </form>
   </div>
 </body>
