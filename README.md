@@ -17,3 +17,10 @@ To-Do-List for community:
 - Sit back, relax and join our Discord Server for Updates :3
 
     - https://discord.gg/EC97N4Exh5
+
+
+# NOTE FOR TEAM
+
+- CSS Code that is only used in one file belongs into the according <style></style> fragment
+
+- CSS Code that can be used in more files belongs into assets.css *file is already linked to html files*

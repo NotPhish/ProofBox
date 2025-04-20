@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap');
+
+/* Please only paste CSS Code in here if it can be used
+ * on more than one site
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f0f0f0;
+    border-bottom: 2px solid #ccc;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #f5f5f5;
+}
+
 .about-btn {
     border: 1px solid black;
     background: white;
